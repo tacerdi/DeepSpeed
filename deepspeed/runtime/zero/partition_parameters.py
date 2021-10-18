@@ -690,7 +690,7 @@ class Init(InsertPostInitMethodToModuleSubClasses):
         for param in param_list:
             #print_rank_0(f"Before Partitioning Param {param.ds_id}")
             #self._param_status(param)
-            self._partition_param(param, has_been_updated=has_been_updated)
+            #self._partition_param(param, has_been_updated=has_been_updated)
             param.ds_status = ZeroParamStatus.NOT_AVAILABLE
             #if param.ds_tensor is not None:
             #    assert id(param.data) == id(param.ds_tensor.data), \
